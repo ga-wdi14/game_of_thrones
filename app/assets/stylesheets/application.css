@@ -20,12 +20,12 @@
 
  body {
    text-align: center;
-   color: #7C2A30;
+   color: #000e26;
  }
 
  nav {
    padding: 15px;
-   background-color: #D8AE48;
+   background-color: #c0d6f9;
    border-radius: 40px 0 40px 0;
  }
 
@@ -37,9 +37,18 @@
    font-size: 22px;
  }
 
+ .house {
+   display: inline-block;
+   width: 350px;
+   text-align: center;
+   margin: 10px;
+   padding: 10px;
+   border-radius: 10%;
+ }
+
  .character {
    display: inline-block;
-   background-color: #D8AE48;
+   background-color: #c0d6f9;
    width: 350px;
    text-align: center;
    margin: 10px;
