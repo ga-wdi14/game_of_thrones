@@ -1,10 +1,11 @@
-<h1>House: <%= @house.name %> (<%= link_to "Edit House", edit_house_path(@house) %>)</h1>
-<h2>Words: <%= @house.words %> | Seat: <%= @house.seat %> | Region: <%= @house.region %> | <%= link_to "Add House Member", new_house_character_path(@house) %></h2>
+<h1><span>House: </span><%= @house.name %> <span class="smaller">(<%= link_to "Edit House", edit_house_path(@house) %>)</span></h1>
+<h2><span>Words: </span><%= @house.words %> | <span>Seat: </span><%= @house.seat %> | <span>Region: </span><%= @house.region %> | <%= link_to "Add House Member", new_house_character_path(@house) %></h2>
 <% @house.characters.each do |character| %>
   <div class="character">
-    <h2><%= character.name %></h2>
+    <h2><span><%= character.name %></span></h2>
+    <h3><%= character.age %> Years Old</h3>
     <%= image_tag character.image %>
     <br>
-    <br>
+    <h3><%= link_to "Edit Character", edit_house_character_path(@house, character) %></h3>
   </div>
 <% end %>

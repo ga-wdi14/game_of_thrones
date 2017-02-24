@@ -19,6 +19,7 @@
  }
 
  body {
+  font-family: "thrones";
    text-align: center;
    color: #000e26;
  }
@@ -26,7 +27,7 @@
  nav {
    padding: 15px;
    background-color: #c0d6f9;
-   border-radius: 40px 0 40px 0;
+   border-radius: 25px;
  }
 
  h1 {
@@ -63,8 +64,18 @@
 
  .house img {
    display: block;
+   position: relative;
+   margin: 0 auto;
  }
-
+.smaller {
+  font-size: 20px;
+  text-decoration: none;
+  font-style: italic;
+}
  img {
    height: 300px;
  }
+
+span {
+  color: #7f020f;
+}

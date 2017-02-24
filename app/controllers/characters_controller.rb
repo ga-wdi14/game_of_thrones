@@ -27,7 +27,7 @@ class CharactersController < ApplicationController
     @house = House.find(params[:house_id])
     @character = Character.find(params[:id])
     @character.destroy
-    redirect_to house_path(@post)
+    redirect_to house_path(@house)
   end
 
   private
