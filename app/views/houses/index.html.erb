@@ -1,0 +1,8 @@
+
+
+  <% @houses.each do |house| %>
+    <article>
+      <h2><%= link_to house.name, house_path(house) %></h2>
+      <img src="<%= house.sigil %>"/>
+    </article>
+  <% end %>
