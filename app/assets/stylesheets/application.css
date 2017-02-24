@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
+
+
+ /*CSS was inspired by the Hogwarts lab: https://github.com/ga-wdi-exercises/hogwarts_rails*/
+
  @font-face {
    font-family: "thrones";
    src: url('game_of_thrones.ttf') format("truetype");
