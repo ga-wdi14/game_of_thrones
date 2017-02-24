@@ -1,5 +1,5 @@
 # Houses of Westeros
-
+ 
 When you play the Game of Rails, you win or you die.
 
 You'll be making a Ruby on Rails app connecting Game of Thrones characters to their respective houses. Implement **full CRUD functionality** on the models.
