@@ -1,0 +1,26 @@
+<h1>Edit The House of <%= @house.name %></h1>
+<img src="<%= @house.sigil %>"/>
+
+<%= form_for @house do |f| %>
+
+  <p><%= f.label :name %>
+  <%= f.text_field :name %></p>
+
+  <p><%= f.label :sigil_url %>
+  <%= f.text_field :sigil %></p>
+
+  <p><%= f.label :words %>
+  <%= f.text_field :words %></p>
+
+  <p><%= f.label :seat %>
+  <%= f.text_field :seat %></p>
+
+  <p><%= f.label :region %>
+  <%= f.text_field :region %></p>
+
+  <%= f.submit %>
+<% end %>
+
+<%= form_for @house, url: "/houses/#{@house.id}", method: :delete do |f| %>
+  <% f.submit "Delete", class: "btn-delete" %>
+<% end %>
